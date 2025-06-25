@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+
+  background-image: url("assets/images/bg.jpg");
+  height: 70vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+
+}
+
+.main .box {
+  height: 70vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60vh;
+  margin: auto;
+  height: 62px;
+
+
+}
+
+nav img {
+
+  width: 146px;
+  position: relative;
+  z-index: 1;
+}
+
+nav button {
+  position: relative;
+  z-index: 1;
+
+}
+
+.hero {
+  height: calc(100% -62px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  font-family: 'Martel Sans', sans-serif;
+  gap: 20px;
+  padding: 30px;
+  text-align: center;
+
+}
+
+.hero> :first-child {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+
+}
+
+.hero> :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+
+}
+
+.hero> :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.sepration {
+  height: 7px;
+  background-color: rgb(36, 34, 34);
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(245, 241, 241, 0.021);
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+
+  color: white;
+  padding: 8px 32px;
+  font-size: 20px;
+  border: 2px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn-red-sign {
+  background-color: red;
+  color: white;
+
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+
+  /* padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  border-color:rgba(23,23,23,0.2); */
+
+}
+
+#chk {
+  padding: 0px 36px;
+  /* width: 100%; */
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid #575757;
+  font-size: 1rem;
+  height: 50px;
+}
+
+.main input {
+  padding: 7px 15px 8px 14px;
+
+  font-size: 12px;
+  border: 2px solid rgba(245, 241, 241, 0.3);
+  border-color: rgba(245, 241, 241, 0.7);
+  border-radius: 4px;
+  background-color: #9793933b;
+  color: white;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50vw;
+  margin: auto;
+  color: white;
+}
+
+
+.secImg {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 51px;
+  /* left: 143px; */
+  right: 0;
+  width: 555px;
+
+}
+
+section.first>div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+.first>div :nth-child(1) {
+
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+}
+
+/* styling the FAQS */
+.faq {
+  background-color: black;
+  color: white;
+
+}
+
+.faq h2 {
+  text-align: center;
+  padding: 25px 0px 25px 0px;
+  font-size: 48px;
+}
+
+.faqbox {
+  color: white;
+
+  display: flex;
+  background-color: #414141;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 1s ease-out;
+}
+
+.faqbox:hover {
+  background-color: grey;
+  border: 2px solid white;
+  border-radius: 10px;
+
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+/* Movies Sections css */
+/* ========== Trending Movies Section ========== */
+.movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 61px 34px;
+  margin: auto;
+}
+
+.trending-section {
+  padding: 20px;
+  display: block;
+  align-items: center;
+}
+
+.trending-title {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 34px;
+  text-align: center;
+}
+
+.trending-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.trending-card {
+  position: relative;
+  width: 140px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.trending-card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.card-rank {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* designing the footer */
+footer {
+  color: white;
+  margin: auto;
+  max-width: 60vw;
+  padding: 34px;
+}
+
+footer .question {
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* footer designing */
+.footer a {
+  /* text-decoration: none; */
+  color: white;
+  font-size: 14px;
+}
